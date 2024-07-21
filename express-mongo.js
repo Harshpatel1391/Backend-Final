@@ -6,9 +6,7 @@ const empc= require('./models/model')
 // const URL = "mongodb+srv://admin:admin123@cluster0.j5rn3zv.mongodb.net/gfgdb2?retryWrites=true&w=majority&appName=Cluster0";
 const URL = "mongodb+srv://admin:admin123@cluster0.o4nwyjq.mongodb.net/gfgdb?retryWrites=true&w=majority&appName=Cluster0"
 var app = express()
-app.use(cors({
-    origin:""
-}))
+app.use(cors())
 app.use(bp.json())
 
 app.post('/addproduct', (req, res) => {
